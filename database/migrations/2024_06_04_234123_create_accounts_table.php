@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
             $table->double('balance');
+            $table->dateTime('dt_inc');
+            $table->dateTime('dt_alt')->nullable();
         });
     }
 
